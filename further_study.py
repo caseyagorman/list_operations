@@ -30,8 +30,12 @@ def custom_len(input_list):
         8
 
     """
+    count = 0
+    for item in input_list:
+        count += 1
 
-    return 0
+    return count
+
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -54,12 +58,12 @@ def custom_append(input_list, value):
 
         >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
         >>> custom_append(notes, 'Re')
-        >>> notes == ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do', 'Re']
+        >>> notes ==
         True
 
     """
+    new_list = input_list + [value]
 
-    pass
 
 
 def custom_extend(input_list, second_list):
