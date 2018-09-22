@@ -58,11 +58,11 @@ def custom_append(input_list, value):
 
         >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
         >>> custom_append(notes, 'Re')
-        >>> notes ==
+        >>> notes == ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do', 'Re']
         True
 
     """
-    new_list = input_list + [value]
+    input_list += [value]
 
 
 
