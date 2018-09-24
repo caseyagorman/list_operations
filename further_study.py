@@ -136,11 +136,11 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
-    item = input_list[-1]
-    input_list[::] = input_list[:-1]
-    print(input_list)
+    last_value = input_list[-1]
+    input_list[-1:] = []
 
-    return item
+    return last_value
+
 
 
 def custom_index(input_list, value):
@@ -160,7 +160,7 @@ def custom_index(input_list, value):
         index += 1
         if item == value:
             break
-    return index 
+    return index
 
 
 def custom_count(input_list, value):
