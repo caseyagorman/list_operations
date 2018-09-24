@@ -137,7 +137,7 @@ def custom_pop(input_list):
 
     """
     item = input_list[-1]
-    input_list = input_list[:-1]
+    input_list[::] = input_list[:-1]
     print(input_list)
 
     return item
@@ -194,7 +194,7 @@ def custom_reverse(input_list):
 
     """
 
-    pass
+    input_list[::] = input_list[::-1]
 
 
 def custom_contains(input_list, value):
