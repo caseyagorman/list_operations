@@ -138,6 +138,7 @@ def custom_pop(input_list):
     """
     item = input_list[-1]
     input_list = input_list[:-1]
+    print(input_list)
 
     return item
 
@@ -170,8 +171,11 @@ def custom_count(input_list, value):
         2
 
     """
-
-    return 0
+    count = 0
+    for item in input_list:
+        if item == value:
+            count += 1
+    return count
 
 
 def custom_reverse(input_list):
