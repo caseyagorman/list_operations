@@ -155,8 +155,12 @@ def custom_index(input_list, value):
         1
 
     """
-
-    return 0
+    index = -1
+    for item in input_list:
+        index += 1
+        if item == value:
+            break
+    return index 
 
 
 def custom_count(input_list, value):
@@ -233,7 +237,7 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return some_list == another_list 
+    return some_list == another_list
 
 
 ##############################################################################
