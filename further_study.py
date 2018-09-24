@@ -214,7 +214,7 @@ def custom_contains(input_list, value):
 
     """
 
-    return None
+    return value in input_list 
 
 
 def custom_equality(some_list, another_list):
