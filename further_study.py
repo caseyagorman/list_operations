@@ -214,7 +214,7 @@ def custom_contains(input_list, value):
 
     """
 
-    return value in input_list 
+    return value in input_list
 
 
 def custom_equality(some_list, another_list):
@@ -233,7 +233,7 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    return some_list == another_list 
 
 
 ##############################################################################
